@@ -130,6 +130,8 @@ Replace `problem` and `method` with the desired options from the lists above.
 
 ## Hyperparameters (PnP-ADMM)
 
+We use a fixed set of default hyperparameters for all inverse problems within each dataset, without performing task-specific hyperparameter tuning. The same configuration is applied across denoising, deblurring, super-resolution, and all inpainting tasks.
+
 The key hyperparameters for the `pnp_flow_admm` method are:
 
 * `steps_pnp` — Number of ADMM iterations (AFHQ-Cat: 250 and CelebA: 200)
